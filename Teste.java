@@ -1,18 +1,19 @@
-package Aula03;
+package Aula04;
 
 public class Teste {
 
 
     public static void main(String[] args) {
-        Caneta c1 = new Caneta();
-        c1.modelo = "BIC Cristal";
-        c1.cor = "Azul";
-        //c1.ponta = 0.5f;
-        c1.carga = 80;
-        //c1.tampada = true;
+        Caneta c1 = new Caneta("NIC",0.5F,"Azul");
+        c1.setTampada(true);
 
-        c1.tampar();
-        c1.statusCaneta();
+        Caneta c2 = new Caneta("SHOPPING METRO",1.5f,"VERMELHA");
+        c2.setTampada(false);
+        //c1.setModelo("BIC");
+        //c1.setPonta(0.5f);
+        c1.status();
+        c2.status();
+        //System.out.println("Modelo da Caneta é: " +c1.getModelo());
 
     }
 }
